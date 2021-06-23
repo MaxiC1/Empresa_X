@@ -1,8 +1,8 @@
 ### El Eduardo La Chupa Rico
-# PD: el feña tambien
+##### PD: el feña tambien
 
 
 
 
 
-# PD2: profe no nos ponga el 0 plis :(
+##### PD2: profe no nos ponga el 0 plis :(

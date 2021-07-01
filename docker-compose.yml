@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   db:
-    container_name: db-animeswiki
+    container_name: db-empresax
     image: mysql:8.0
     ports:
       - "3306:3306"
@@ -10,13 +10,13 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_DATABASE: animeswiki_db
+      MYSQL_DATABASE: empresax_db
       MYSQL_USER: laravel
       MYSQL_PASSWORD: 123456
     networks:
-      - net-animeswiki
+      - net-empresax
   web:
-    container_name: animeswiki-web
+    container_name: empresax-web
     depends_on:
       - db
     ports:
@@ -29,7 +29,7 @@ services:
       context: .
       dockerfile: Dockerfile
     networks:
-      - net-animeswiki
+      - net-empresax
 networks:
-  net-animeswiki:
+  net-empresax:
     

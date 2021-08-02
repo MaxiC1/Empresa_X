@@ -13,14 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view("/", "home")->name("home");
-
-
-
-/*
-Route::view("/ver_juego", "ver_juego")->name("ver_juego");
-
-Route::get("/ver_juego", function(){
-    return view('ver_juego');
-});
-*/
+Route::view("/", "registro_usuarios")->name("registro_usuarios");
+Route::view("/ver_usuarios", "ver_usuarios")->name("ver_usuarios");

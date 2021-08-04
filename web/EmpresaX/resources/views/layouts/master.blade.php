@@ -41,8 +41,8 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cargas Familiares</a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="">Registrar Carga Familiar</a>
-                            <a class="dropdown-item" href="">Ver Cargas Familiares</a>
+                            <a class="dropdown-item" href="{{route('registro_cargas')}}">Registrar Carga Familiar</a>
+                            <a class="dropdown-item" href="{{route('ver_cargas')}}">Ver Cargas Familiares</a>
                           </ul>
                       </li>
                         <!--TODO: HACER MAS VISTAS -->                    </div>

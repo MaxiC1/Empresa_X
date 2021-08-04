@@ -16,10 +16,12 @@
                     <label for="rut-txt" class="form-label">RUT</label>
                     <input type="number" id="rut-txt" class="form-control">
                 </div>
+                <!-- TODO: Cambiar a Fecha y Validar con migracion -->
                 <div class="mb-3">
                     <label for="otorgamiento-txt" class="form-label">Fecha de Otorgamiento</label>
                     <input type="number" class="form-control" id="otorgamiento-txt">
                 </div>
+                <!-- TODO: Cambiar a Fecha y Validar con migracion -->
                 <div class="mb-3">
                     <label for="reposo-txt" class="from-label">Fecha Inicio Reposo</label>
                     <input type="number" id="reposo-txt" class="form-control">

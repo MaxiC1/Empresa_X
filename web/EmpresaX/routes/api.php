@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\LicenciasController;
+use App\Http\Controllers\CargasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,7 @@ Route::post("licencias/post", [LicenciasController::class, "crearLicencia"]);
 
 Route::post("usuarios/delete", [UsuariosController::class, "eliminarUsuarios"]);
 Route::post("licencias/delete", [LicenciasController::class, "eliminarLicencia"]);
+
+Route::get("tiposCargas/get", [CargasController::class, "getTiposCargas"]);
+Route::get("cargas/get", [CargasController::class, "getCargas"]);
+Route::post("cargas/post", [CargasController::class, "crearCarga"]);

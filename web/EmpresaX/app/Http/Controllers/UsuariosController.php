@@ -15,6 +15,7 @@ class UsuariosController extends Controller
         $input = $request->all();
         $usuario = new Usuario();
         $usuario->nombre = $input["nombre"];
+        $usuario->anionacimiento = $input["anionacimiento"];
         $usuario->correo = $input["correo"];
         $usuario->nusuario = $input["nusuario"];
 

@@ -21,6 +21,8 @@ const cargarTabla = (usuarios)=>{
         let tr = document.createElement("tr");
         let tdNombre = document.createElement("td");
         tdNombre.innerText = usuarios[i].nombre;
+        let tdAnio = document.createElement("td");
+        tdAnio.innerText = usuarios[i].anionacimiento;
         let tdCorreo = document.createElement("td");
         tdCorreo.innerText = usuarios[i].correo;
         let tdUsuario = document.createElement("td");
@@ -33,6 +35,7 @@ const cargarTabla = (usuarios)=>{
         botonEliminar.addEventListener("click", iniciarEliminacion);
         tdAcciones.appendChild(botonEliminar);
         tr.appendChild(tdNombre);
+        tr.appendChild(tdAnio);
         tr.appendChild(tdCorreo);
         tr.appendChild(tdUsuario);
         tr.appendChild(tdAcciones);

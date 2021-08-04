@@ -16,6 +16,7 @@
             <thead class="bg-info">
                 <tr>
                     <td>Nombre Completo</td>
+                    <td>Año de Nacimiento</td>
                     <td>Correo Electronico</td>
                     <td>Nombre de Usuario</td>
                     <td>Acciones</td>

@@ -17,6 +17,10 @@
                         <input type="email" id="correo-txt" class="form-control">
                     </div>
                     <div class="mb-3">
+                        <label for="anionacimiento-txt" class="form-label">Año de Nacimiento</label>
+                        <input type="date" class="form-control" id="anionacimiento-txt">
+                    </div>
+                    <div class="mb-3">
                         <label for="nusuario-txt" class="from-label">Nombre de Usuario</label>
                         <input type="text" id="nusuario-txt" class="form-control">
                     </div>

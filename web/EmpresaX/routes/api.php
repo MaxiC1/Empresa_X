@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\LicenciasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get("usuarios/get", [UsuariosController::class, "getUsuarios"]);
+Route::get("licencias/get", [LicenciasController::class, "getLicencias"]);
+Route::get("tipolicencia/get", [LicenciasController::class, "getTipoLicencia"]);
+Route::get("sexos/get", [LicenciasController::class, "getSexos"]);
+Route::get("licencias/filtrar", [LicenciasController::class, "filtrarLicencias"]);
 
 Route::post("usuarios/post", [UsuariosController::class, "crearUsuarios"]);
+Route::post("licencias/post", [LicenciasController::class, "crearLicencia"]);
+
 Route::post("usuarios/delete", [UsuariosController::class, "eliminarUsuarios"]);
+Route::post("licencias/delete", [LicenciasController::class, "eliminarLicencia"]);

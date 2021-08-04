@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{csrf_token()}}">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/style_navbar.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
 
     <title>Empresa X</title>
   </head>
@@ -31,9 +31,21 @@
                               <a class="dropdown-item" href="{{route('ver_usuarios')}}">Ver Tabla de Usuarios</a>
                             </ul>
                         </li>
-                        <!--TODO: HACER MAS VISTAS -->
-                        <!-- TODO: HACER FORMULARIO DE USUARIOS -->
-                    </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Licencias Medicas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="{{route('registro_licencias')}}">Registrar Licencia</a>
+                              <a class="dropdown-item" href="{{route('ver_licencias')}}">Ver Licencias</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cargas Familiares</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Registrar Carga Familiar</a>
+                            <a class="dropdown-item" href="">Ver Cargas Familiares</a>
+                          </ul>
+                      </li>
+                        <!--TODO: HACER MAS VISTAS -->                    </div>
                 </div>
                 <!-- <form class="d-flex"> -->
                     <!-- <button id="btn-cerrar_sesion" class="btn btn-outline-dark" type="">Cerrar Sesión</button> -->

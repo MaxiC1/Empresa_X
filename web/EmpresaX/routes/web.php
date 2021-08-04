@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::view("/", "registro_usuarios")->name("registro_usuarios");
 Route::view("/ver_usuarios", "ver_usuarios")->name("ver_usuarios");
+Route::view("/registro_licencias", "registro_licencias")->name("registro_licencias");
+Route::view("/ver_licencias", "ver_licencias")->name("ver_licencias");

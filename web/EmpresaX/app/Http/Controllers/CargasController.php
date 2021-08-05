@@ -7,13 +7,8 @@ use Illuminate\Http\Request;
 class CargasController extends Controller
 {
     public function getTiposCargas(){
-        $tipoCarga = array();
-        $tipoCarga[] = "Madre";
-        $tipoCarga[] = "Padre";
-        $tipoCarga[] = "Hijo";
-        $tipoCarga[] = "Hija";
-        $tipoCarga[] = "Conyuge";
-
+        $tipoCarga = ["Madre", "Padre", "Hijo", "Hija", "Conyuge"];
+        
         return $tipoCarga;
     }
 

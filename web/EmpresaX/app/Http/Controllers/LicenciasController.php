@@ -7,22 +7,13 @@ use Illuminate\Http\Request;
 class LicenciasController extends Controller
 {
     public function getSexos(){
-        $sexos = array();
-        $sexos[] = "M";
-        $sexos[] = "F";
+        $sexos = ["M", "F"];
 
         return $sexos;
     }
 
     public function getTipoLicencia(){
-        $tipoLicencia = array();
-        $tipoLicencia[] = "Enfermedad o Accidente Común";
-        $tipoLicencia[] = "Prorroga Medicina Preventiva";
-        $tipoLicencia[] = "Licencia Maternal PRE y POST Natal";
-        $tipoLicencia[] = "Enfermedad Grave Niño Menor de 1 Año";
-        $tipoLicencia[] = "Accidente del trabajo o del trayecto";
-        $tipoLicencia[] = "Enfermedad Profesional";
-        $tipoLicencia[] = "Patologia del Embarazo";
+        $tipoLicencia = ["Enfermedad o Accidente Común", "Prorroga Medicina Preventiva", "Licencia Maternal PRE y POST Natal", "Enfermedad Grave Niño Menor de 1 Año", "Accidente del trabajo o del trayecto", "Enfermedad Profesional", "Patologia del Embarazo"];
 
         return $tipoLicencia;
     }

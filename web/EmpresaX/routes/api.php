@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\LicenciasController;
 use App\Http\Controllers\CargasController;
+use App\Http\Controllers\ContratosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,9 @@ Route::get("cargas/get", [CargasController::class, "getCargas"]);
 Route::get("cargas/filtrar", [CargasController::class, "filtrarCargas"]);
 Route::post("cargas/post", [CargasController::class, "crearCarga"]);
 Route::post("cargas/delete", [CargasController::class, "eliminarCarga"]);
+
+Route::get("tipoContrato/get", [ContratosController::class, "getTipoContrato"]);
+Route::get("contratos/get", [ContratosController::class, "getContratos"]);
+Route::post("contratos/post", [ContratosController::class, "crearContrato"]);
+Route::post("contratos/delete", [ContratosController::class, "eliminarContrato"]);
+Route::get("contratos/filtrar", [ContratosController::class, "filtrarContratos"]);

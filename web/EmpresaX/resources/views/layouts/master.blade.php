@@ -7,17 +7,17 @@
     <meta name="csrf-token" content="{{csrf_token()}}">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <title>Empresa X</title>
   </head>
   <body>
     
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <nav class="navbar navbar-expand-lg navbar-light navbarcolor">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{route('registro_usuarios')}}">
-                    <img src="{{ asset('')}}" class="logo">
+                    <img src="{{asset('img/logo.png')}}" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,27 +25,33 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="{{route('registro_usuarios')}}">Registrar Usuario</a>
                               <a class="dropdown-item" href="{{route('ver_usuarios')}}">Ver Tabla de Usuarios</a>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Licencias Medicas</a>
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Licencias Medicas</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="{{route('registro_licencias')}}">Registrar Licencia</a>
                               <a class="dropdown-item" href="{{route('ver_licencias')}}">Ver Licencias</a>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cargas Familiares</a>
+                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cargas Familiares</a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="{{route('registro_cargas')}}">Registrar Carga Familiar</a>
                           <a class="dropdown-item" href="{{route('ver_cargas')}}">Ver Cargas Familiares</a>
                           </ul>
                         </li>
-                        <!--TODO: HACER MAS VISTAS -->                    
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contratos</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="{{route('registro_contratos')}}">Ingresar un Contrato Nuevo</a>
+                          <a class="dropdown-item" href="{{route('ver_contratos')}}">Ver Contratos Vigentes</a>
+                          </ul>
+                        </li>                  
                       </div>
                 </div>
                 <!-- <form class="d-flex"> -->

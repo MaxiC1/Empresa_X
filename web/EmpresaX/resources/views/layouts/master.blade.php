@@ -41,11 +41,12 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cargas Familiares</a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('registro_cargas')}}">Registrar Carga Familiar</a>
-                            <a class="dropdown-item" href="{{route('ver_cargas')}}">Ver Cargas Familiares</a>
+                          <a class="dropdown-item" href="{{route('registro_cargas')}}">Registrar Carga Familiar</a>
+                          <a class="dropdown-item" href="{{route('ver_cargas')}}">Ver Cargas Familiares</a>
                           </ul>
-                      </li>
-                        <!--TODO: HACER MAS VISTAS -->                    </div>
+                        </li>
+                        <!--TODO: HACER MAS VISTAS -->                    
+                      </div>
                 </div>
                 <!-- <form class="d-flex"> -->
                     <!-- <button id="btn-cerrar_sesion" class="btn btn-outline-dark" type="">Cerrar Sesión</button> -->
@@ -56,7 +57,7 @@
     </header>
 
     <main class="container-fluid">
-        @yield("contenido")  
+      @yield("contenido")  
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

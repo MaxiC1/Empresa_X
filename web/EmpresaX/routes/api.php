@@ -35,4 +35,6 @@ Route::post("licencias/delete", [LicenciasController::class, "eliminarLicencia"]
 
 Route::get("tiposCargas/get", [CargasController::class, "getTiposCargas"]);
 Route::get("cargas/get", [CargasController::class, "getCargas"]);
+Route::get("cargas/filtrar", [CargasController::class, "filtrarCargas"]);
 Route::post("cargas/post", [CargasController::class, "crearCarga"]);
+Route::post("cargas/delete", [CargasController::class, "eliminarCarga"]);

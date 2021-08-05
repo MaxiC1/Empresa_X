@@ -19,3 +19,4 @@ Route::view("/registro_licencias", "registro_licencias")->name("registro_licenci
 Route::view("/ver_licencias", "ver_licencias")->name("ver_licencias");
 Route::view("/registro_cargas", "registro_cargas")->name("registro_cargas");
 Route::view("/ver_cargas", "ver_cargas")->name("ver_cargas");
+Route::view("/registro_sueldos", "registro_sueldos")->name("registro_sueldos");

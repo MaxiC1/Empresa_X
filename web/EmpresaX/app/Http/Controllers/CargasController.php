@@ -22,6 +22,13 @@ class CargasController extends Controller
         return $cargas;
     }
 
+    public function filtrarCargas(Request $request){
+        $input = $request->all();
+        $filtro = $input["filtro"];
+        $cargas = Carga::where("tipocarga", $filtro)->get();
+        return $cargas;
+    }
+
     public function crearCarga(Request $request){
         $input = $request->all();
         $carga = new Carga();
@@ -35,5 +42,13 @@ class CargasController extends Controller
 
         $carga->save();
         return $carga;
+    }
+
+    public function eliminarCarga(Request $request){
+        $input = $request->all();
+        $id = $input["id"];
+        $carga = Carga::findOrFail($id);
+        $carga->delete();
+        return "ok";
     }
 }

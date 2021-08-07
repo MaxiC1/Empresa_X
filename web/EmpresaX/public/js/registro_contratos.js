@@ -34,10 +34,6 @@ document.querySelector("#registrarcontrato-btn").addEventListener("click", async
         errores.push("Debe ingresar una fecha de inicio para hacer valido el contrato");
     }
 
-    if(fechatermino === ""){
-        errores.push("Debe ingresar una fecha de termino para hacer valido el contrato");
-    }
-
     if(isNaN(sueldo)){
         errores.push("El sueldo debe ser numerico");
     }else if( +sueldo < 337000){
@@ -57,12 +53,12 @@ document.querySelector("#registrarcontrato-btn").addEventListener("click", async
         contrato.fechatermino = fechatermino;
         contrato.sueldo = sueldo;
         let res = await crearContrato(contrato);
-        await Swal.fire("Contrato Registrado", "Contrato registrado exitosamente", "info");
+        await Swal.fire("Contrato Registrado", "Contrato registrado en el sistema exitosamente", "success");
         window.location.href = "ver_contratos";
     }else{
         Swal.fire({
             title: "Errores de validacion",
-            icon: "warning",
+            icon: "error",
             html: errores.join("<br />")
         });
     }

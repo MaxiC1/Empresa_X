@@ -6,22 +6,22 @@ document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
 
     let errores = [];
     if(correo === ""){
-        errores.push("Debe ingresar un correo");
+        errores.push("Debe ingresar un correo para que se le registre en el sistema");
     }else{
         let usuarios = await getUsuarios();
         let usuarioEncontrado = usuarios.find(c=>c.correo.toLowerCase() === correo.toLowerCase());
         if(usuarioEncontrado != undefined){
-            errores.push("El Correo ya existe");
+            errores.push("El Correo ya existe dentro del sistema");
         }
     }
 
     if(nusuario === ""){
-        errores.push("Debe ingresar un usuario valido");
+        errores.push("Debe ingresar un usuario valido para registrarse");
     }else{
         let usuarios = await getUsuarios();
         let usuarioEncontrado = usuarios.find(c=>c.nusuario.toLowerCase() === nusuario.toLowerCase());
         if(usuarioEncontrado != undefined){
-            errores.push("El Usuario ya existe");
+            errores.push("El Usuario ya existe en el sistema");
         }
     }
 
@@ -38,12 +38,12 @@ document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
         usuario.correo = correo;
         usuario.nusuario = nusuario;
         let res = await crearUsuarios(usuario);
-        await Swal.fire("Usuario Registrado", "Usuario Registrado Exitosamente", "info");
+        await Swal.fire("Usuario Registrado", "Usuario Registrado en el sistema Exitosamente", "success");
         window.location.href = "ver_usuarios";
     }else{
         Swal.fire({
             title: "Errores de validacion",
-            icon: "warning",
+            icon: "error",
             html: errores.join("<br />")
         })
     }

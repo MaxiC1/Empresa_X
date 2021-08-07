@@ -11,7 +11,7 @@ const cargarTipoContrato = async ()=>{
 
 const iniciarEliminacion = async function(){
     let id = this.idContrato;
-    let resp = await Swal.fire({title:"Esta seguro de eliminar este contrato?", text:"Esta operacion es irreversible", icon:"error", showCancelButton:true});
+    let resp = await Swal.fire({title:"Esta seguro de eliminar este contrato?", text:"Esta operacion es irreversible", icon:"question", showCancelButton:true});
     if(resp.isConfirmed){
         if(await eliminarContrato(id)){
             let contratos = await getContratos();

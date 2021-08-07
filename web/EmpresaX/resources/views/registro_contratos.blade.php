@@ -27,7 +27,7 @@
                     <input type="number" id="fechaInicio-txt" class="form-control border-dark">
                 </div>
                 <div class="mb-3">
-                    <label for="fechaTermino-txt" class="form-label">Ingrese la fecha de Termino del Contrato</label>
+                    <label for="fechaTermino-txt" class="form-label">Ingrese la fecha de Termino del Contrato (En caso de tratarse de un contrato a Plazo Fijo)</label>
                     <input type="number" id="fechaTermino-txt" class="form-control border-dark">
                 </div>
                 <div class="mb-3">

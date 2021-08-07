@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ContratosController extends Controller
 {
     public function getTipoContrato(){
-        $contratos = ["Indefinido", "Plazo Fijo"];
+        $contratos = ["Plazo Fijo", "Indefinido"];
 
         return $contratos;
     }

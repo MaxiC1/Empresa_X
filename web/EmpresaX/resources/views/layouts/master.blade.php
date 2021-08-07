@@ -54,10 +54,6 @@
                         </li>                  
                       </div>
                 </div>
-                <!-- <form class="d-flex"> -->
-                    <!-- <button id="btn-cerrar_sesion" class="btn btn-outline-dark" type="">Cerrar Sesión</button> -->
-                    <!-- bg-danger text-light -->
-                <!-- </form> -->
             </div>
         </nav>
     </header>

@@ -81,12 +81,12 @@ document.querySelector("#registrarcarga-btn").addEventListener("click", async ()
         carga.fecha_beneficio = fechaBeneficio;
         carga.nombre_carga = nombreCarga;
         let res = await crearCarga(carga);
-        await Swal.fire("Carga Registrada", "Carga registrada exitosamente", "info");
+        await Swal.fire("Carga Registrada", "Carga registrada en el sistema exitosamente", "success");
         window.location.href = "ver_cargas";
     }else{
         Swal.fire({
             title: "Errores de validacion",
-            icon: "warning",
+            icon: "error",
             html: errores.join("<br />")
         });
     }

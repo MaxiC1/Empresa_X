@@ -67,12 +67,12 @@ document.querySelector("#registrarlicencia-btn").addEventListener("click", async
         licencia.dias = dias;
         licencia.tipolicencia = tipolicencia;
         let res = await crearLicencia(licencia);
-        await Swal.fire("Licencia Registrada", "Licencia creada exitosamente", "info");
+        await Swal.fire("Licencia Registrada", "Licencia creada exitosamente", "success");
         window.location.href = "ver_licencias";
     }else{
         Swal.fire({
             title: "Errores de validacion",
-            icon: "warning",
+            icon: "error",
             html: errores.join("<br />")
         });
     }

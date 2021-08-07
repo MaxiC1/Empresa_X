@@ -1,6 +1,6 @@
 const iniciarEliminacion = async function(){
     let id = this.idUsuario;
-    let resp = await Swal.fire({title:"Esta seguro?", text:"Esta operacion es irreversible", icon:"error", showCancelButton:true});
+    let resp = await Swal.fire({title:"Esta seguro?", text:"Esta operacion es irreversible", icon:"question", showCancelButton:true});
     if(resp.isConfirmed){
         if(await eliminarUsuarios(id)){
             let usuarios = await getUsuarios ();
